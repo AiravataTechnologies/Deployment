@@ -774,7 +774,7 @@ export default function Hero() {
           </motion.p>
 
           {/* CTA Buttons */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -796,7 +796,7 @@ export default function Hero() {
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Get in Touch
             </Button>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
