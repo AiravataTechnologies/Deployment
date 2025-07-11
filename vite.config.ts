@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig(async ({ command, mode }) => {
   const plugins: PluginOption[] = [react()];
-  
+
   // Only include runtime error overlay in development
   if (process.env.NODE_ENV === "development") {
     try {
@@ -14,7 +14,7 @@ export default defineConfig(async ({ command, mode }) => {
       console.warn("Runtime error overlay plugin not available:", error?.message || error);
     }
   }
-  
+
   // Only include cartographer in non-production Repl environments
   if (
     process.env.NODE_ENV !== "production" &&
@@ -39,7 +39,7 @@ export default defineConfig(async ({ command, mode }) => {
     },
     root: path.resolve(process.cwd(), "client"),
     build: {
-      outDir: "../dist/public",
+      outDir: "../dist",
       emptyOutDir: true,
       // Optimize for production
       minify: process.env.NODE_ENV === "production",
