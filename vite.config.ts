@@ -39,7 +39,7 @@ export default defineConfig(async ({ command, mode }) => {
     },
     root: path.resolve(process.cwd(), "client"),
     build: {
-      outDir: "../dist",
+      outDir: "../dist/public",
       emptyOutDir: true,
       // Optimize for production
       minify: process.env.NODE_ENV === "production",
