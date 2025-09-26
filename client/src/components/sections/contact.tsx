@@ -210,7 +210,7 @@ export default function Contact() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 9619523254",
+      value: "+91 9619523254/+91 8975623356",
       color: "from-green-500 to-emerald-500"
     },
     {
